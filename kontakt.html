@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kosarr Kontakt</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">Kosar</a>
+
+                <img id="mobile-cta" class="mobil-meny" src="Bild/menu.svg" alt="Öppna menyn">
+
+                <nav>
+
+                    <img id="mobile-exit" class="mobil-meny-exit" src="Bild/exit.svg" alt="Stäng menyn">
+                    
+                    <ul class="ett-nav">
+                        <li class="current"><a href="index.html">Hem</a></li>
+                        <li><a href="klient.html">Klienttekniker</a></li>
+                        <li><a href="projekt.html">Projektmetodik</a></li>
+                        <li><a href="tillhet.html">Tillgänglighet</a></li>
+                        <li><a href="analys.html">Analys</a></li>
+                    </ul>
+
+                    <ul class="tva-nav">
+                        <li><a href="#">Internet</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="Hero">
+            <div class="container">
+                <div class="Left-col">
+                    <p class="subheadd" >Välkommen till kontakt avdelningen.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="divclass">
+        <h1>Kontaktformulär</h1>
+
+      
+
+    <form method="post" name="guestBook" onsubmit="return submitForm()">
+
+        <div>
+
+            <label for="name">Namn:
+
+                <br>
+
+                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+
+            </label>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="epost">Epost:
+
+                <br>
+
+                <input type="email" name="epost" id="epost" placeholder="ange din epost adress" required>
+
+            </label>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="telefon">Telefonnummer:
+
+                <br>
+
+                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt telefonummer">
+
+            </label>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="telefon">Meddelande
+
+                <br>
+
+                <textarea name="meddelande" id="meddelande"></textarea>
+
+            </label>
+
+        </div>
+
+        <div>
+
+            <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
+
+        </div>
+
+        <br>
+
+        <input type="submit" value="Skicka">
+
+    </form>
+
+    
+</form>
+<h2>Inlägg</h2>
+
+</div>
+    <p id="message"></p>
+
+
+        <script>
+                
+                const mobileBtn = document.getElementById('mobile-cta')
+                    nav = document.querySelector('nav')
+                    mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn')
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+
+        </script>
+        
+        
+
+
+    </body>
+</html>

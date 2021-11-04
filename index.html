@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kosarr Hem</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">Kosar</a>
+
+                <img id="mobile-cta" class="mobil-meny" src="Bild/menu.svg" alt="Öppna menyn">
+
+                <nav>
+
+                    <img id="mobile-exit" class="mobil-meny-exit" src="Bild/exit.svg" alt="Stäng menyn">
+                    
+                    <ul class="ett-nav">
+                        <li class="current"><a href="index.html">Hem</a></li>
+                        
+                        <li><a href="klient.html">Klienttekniker</a>
+                            </li>
+                        <li><a href="projekt.html">Projektmetodik</a></li>
+                        <li><a href="tillhet.html">Tillgänglighet</a></li>
+                        <li><a href="analys.html">Analys</a></li>
+
+                    </ul>
+
+                    <ul class="tva-nav">
+                        <li><a href="#">Internet</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="Hero">
+            <div class="container">
+                <div class="Left-col">
+                    <p class="subhead" >Välkommen till Kosars hemsida.</p>
+                    <h1 class="sthe">Fyll på med kunskap inom Agila utvecklingsmetoder</h1>
+                </div>
+            </div>
+                <img class="enhtml" src="Bild/enhtml.png" alt="htmlbilden"> 
+        </section>
+
+
+        <script>
+                
+                const mobileBtn = document.getElementById('mobile-cta')
+                    nav = document.querySelector('nav')
+                    mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn')
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+
+        </script>
+
+    </body>
+</html>
